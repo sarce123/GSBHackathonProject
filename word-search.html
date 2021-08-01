@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+    <div>
+			<nav> <h1>
+        			<a href="index.html">Home</a>
+        			<a href="resources.html">Resources</a>
+        			<a href="brazen-boxes.html">Brazen Boxes</a>
+        			<a href="convention.html">Convention</a>
+        			<a href="game.html">Game</a>
+        		
+        		</h1>
+    		</nav>
+		</div>
+    <h2><center>
+				Word Search
+			</h2>
+      <p>
+        Instructions: click on one grid cell to select it, and then click on another until you form a word that you think would fill a blank for one of the categories!
+      </p>
+			<script>
+    			window.onload = function()
+    			{
+        			for(let node of document.querySelectorAll("td"))
+        			{
+        				node.onclick = function()
+        				{
+            				if(node.className == "")
+            				{
+            					node.className = "selected"
+            				}
+            				else
+            				{
+            					node.className = ""
+            				}
+        				}
+        			}
+    			}
+    		</script>
+    		<style>
+    			table
+    			{
+        			border-collapse: collapse;
+    			}
+				td 
+				{
+				    cursor: pointer;
+				    border: 1px solid black;
+				    width: 20px;
+				    height: 20px;
+				    text-align:center;
+				 }
+				td.selected{
+				    background: pink;
+				}
+				center {
+					margin-left: auto;
+					margin-right: auto;
+				}
+    		</style>
+			<table class = "center">
+	    			<tr>
+	        			<td>N</td>
+	        			<td>Q</td>
+	        			<td>Z</td>
+	        			<td>S</td>
+	        			<td>J</td>
+	        			<td>M</td>
+	        			<td>M</td>
+	        			<td>O</td>
+	        			<td>N</td>
+	        			<td>F</td>
+	        			<td>S</td>
+	        			<td>K</td>
+	        			<td>O</td>
+	        			<td>K</td>
+	        			<td>N</td>
+	        			<td>O</td>
+	        			<td>I</td>
+	        			<td>R</td>
+	    			</tr>
+	    			<tr>
+	        			<td>G</td>
+	        			<td>O</td>
+				        <td>U</td>
+				        <td>D</td>
+				        <td>T</td>
+				        <td>X</td>
+				        <td>H</td>
+				        <td>X</td>
+				        <td>I</td>
+				        <td>G</td>
+				        <td>F</td>
+				        <td>M</td>
+				        <td>E</td>
+				        <td>G</td>
+				        <td>F</td>
+				        <td>R</td>
+				        <td>K</td>
+				        <td>D</td>
+	    			</tr>
+			    	<tr>
+				        <td>M</td>
+				        <td>I</td>
+				        <td>N</td>
+				        <td>P</td>
+				        <td>F</td>
+				        <td>A</td>
+				        <td>G</td>
+				        <td>O</td>
+				        <td>B</td>
+				        <td>C</td>
+				        <td>U</td>
+				        <td>P</td>
+				        <td>F</td>
+				        <td>J</td>
+				        <td>D</td>
+				        <td>A</td>
+				        <td>X</td>
+				        <td>I</td>
+				      </tr>
+				      <tr>
+				        <td>B</td>
+				        <td>W</td>
+				        <td>Q</td>
+				        <td>B</td>
+				        <td>G</td>
+				        <td>M</td>
+				        <td>M</td>
+				        <td>Y</td>
+				        <td>M</td>
+				        <td>E</td>
+				        <td>Z</td>
+				        <td>I</td>
+				        <td>N</td>
+				        <td>T</td>
+				        <td>Y</td>
+				        <td>N</td>
+				        <td>T</td>
+				        <td>M</td>
+				      </tr>
+				      <tr>
+				        <td>B</td>
+				        <td>Y</td>
+				        <td>X</td>
+				        <td>E</td>
+				        <td>I</td>
+				        <td>A</td>
+				        <td>I</td>
+				        <td>P</td>
+				        <td>G</td>
+				        <td>E</td>
+				        <td>R</td>
+				        <td>F</td>
+				        <td>N</td>
+				        <td>Z</td>
+				        <td>F</td>
+				        <td>G</td>
+				        <td>H</td>
+				        <td>C</td>
+				      </tr>
+				      <tr>
+				        <td>C</td>
+				        <td>M</td>
+				        <td>U</td>
+				        <td>A</td>
+				        <td>T</td>
+				        <td>N</td>
+				        <td>K</td>
+				        <td>L</td>
+				        <td>O</td>
+				        <td>E</td>
+				        <td>L</td>
+				        <td>A</td>
+				        <td>R</td>
+				        <td>T</td>
+				        <td>A</td>
+				        <td>E</td>
+				        <td>I</td>
+				        <td>W</td>
+				      </tr>
+				      <tr>
+				        <td>U</td>
+				        <td>N</td>
+				        <td>R</td>
+				        <td>I</td>
+				        <td>O</td>
+				        <td>O</td>
+				        <td>A</td>
+				        <td>P</td>
+				        <td>L</td>
+				        <td>N</td>
+				        <td>M</td>
+				        <td>E</td>
+				        <td>C</td>
+				        <td>H</td>
+				        <td>W</td>
+				        <td>E</td>
+				        <td>C</td>
+				        <td>Z</td>
+				      </tr>
+				      <tr>
+				        <td>X</td>
+				        <td>D</td>
+				        <td>D</td>
+				        <td>L</td>
+				        <td>T</td>
+				        <td>G</td>
+				        <td>P</td>
+				        <td>R</td>
+				        <td>V</td>
+				        <td>I</td>
+				        <td>T</td>
+				        <td>V</td>
+				        <td>S</td>
+				        <td>I</td>
+				        <td>R</td>
+				        <td>B</td>
+				        <td>K</td>
+				        <td>C</td>
+				      </tr>
+				      <tr>
+				        <td>N</td>
+				        <td>O</td>
+				        <td>U</td>
+				        <td>G</td>
+				        <td>X</td>
+				        <td>T</td>
+				        <td>F</td>
+				        <td>T</td>
+				        <td>Y</td>
+				        <td>P</td>
+				        <td>O</td>
+				        <td>A</td>
+				        <td>W</td>
+				        <td>S</td>
+				        <td>O</td>
+				        <td>U</td>
+				        <td>I</td>
+				        <td>Q</td>
+				      </tr>
+				      <tr>
+				        <td>R</td>
+				        <td>E</td>
+				        <td>U</td>
+				        <td>S</td>
+				        <td>A</td>
+				        <td>B</td>
+				        <td>L</td>
+				        <td>E</td>
+				        <td>L</td>
+				        <td>E</td>
+				        <td>H</td>
+				        <td>N</td>
+				        <td>X</td>
+				        <td>Q</td>
+				        <td>R</td>
+				        <td>Y</td>
+				        <td>O</td>
+				        <td>O</td>
+				      </tr>
+				      <tr>
+				        <td>P</td>
+				        <td>J</td>
+				        <td>Z</td>
+				        <td>B</td>
+				        <td>T</td>
+				        <td>C</td>
+				        <td>O</td>
+				        <td>N</td>
+				        <td>E</td>
+				        <td>Z</td>
+				        <td>X</td>
+				        <td>Z</td>
+				        <td>Q</td>
+				        <td>J</td>
+				        <td>M</td>
+				        <td>N</td>
+				        <td>H</td>
+				        <td>B</td>
+				      </tr>
+				      <tr>
+				        <td>P</td>
+				        <td>C</td>
+				        <td>O</td>
+				        <td>S</td>
+				        <td>X</td>
+				        <td>Y</td>
+				        <td>Z</td>
+				        <td>E</td>
+				        <td>K</td>
+				        <td>R</td>
+				        <td>S</td>
+				        <td>Z</td>
+				        <td>V</td>
+				        <td>P</td>
+				        <td>Z</td>
+				        <td>C</td>
+				        <td>O</td>
+				        <td>T</td>
+				      </tr>
+		    	</table>
+		    <div class="center">
+		      <h2>1) A period product that is not a pad or tampon.</h2>
+		      <h2>2) Incarcetrated and _______ people who menstruate often face period poverty.</h2>
+		      <h2>3) People who are not cisgender women who can get periods.</h2>
+		      <h2>4) 500 _____ people live each month in period poverty.</h2>
+		      <h2>5) ___ in 10 people who have periods are unable to </h2>
+		      <h2>6) ____ colored period blood means that one may have a vaginal infection or blood made with cervical fluid</h2>
+		      <h2>7) ___ is a condition in which people may develop numerous small collections of fluid and fail to regularly release eggs</h2>
+		      <h2>8) _____ pads can be easily made at home!</h2>
+		      <h2>9) Term for the extra money people who menstruate pay on products.</h2>
+		      <h2>10) ____ period blood signals a healthy period.</h2>
+		    </div>
+        <button class="center, resource-button" onclick="window.open('https://cdn.discordapp.com/attachments/871264304387731490/871341826181857330/Screen_Shot_2021-08-01_at_2.09.06_AM.png')">Answers</button>
+		</div>
+	</body>
+</html>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+<style>
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;  
+}
+
+h1 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+h2 {
+  font-family: 'Abril Fatface', serif;
+  font-size: 16px;  
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

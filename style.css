@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+h2 {
+  padding-left: 40px;
+}
+
+h1 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+li {
+  padding-left: 70px;
+}
+
+h3 {
+  font-size: 28px;
+  padding-left: 40px;
+ 
+}
+
+h4 {
+  font-size: 35px;
+  text-align: center;
+}
+
+h5 {
+  font-size: 45px;
+  text-align: center;
+}
+h6 {
+  font-size: 55px;
+}
+
+p{
+  font-size: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+nav {
+	color: #ff9595;
+	width: 100%;
+	background-color: #ff9595;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	justify-content:space-around;
+	flex-wrap:wrap;
+  text-align: center;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+	margin: 0 12px;
+}
+
+nav a:hover {
+	color: #df6060;
+}
+
+footer {
+	width: 100%;
+	background-color: #ff9595;
+	color: white;
+	position: relative;
+	left: 0;
+	bottom: 0;
+  text-align: center;
+}
+
+.text-box {
+  width: 500px;
+  padding: 20px;
+  margin: 80px;
+}
+
+.text-box1 {
+  width: 500px;
+  padding: 20px;
+  margin: 80px;
+}
+
+.first-title {
+	color: pink;
+}
+
+.entries h1 {
+	font-size: 20px;
+	margin: 12px 0 12px 18px;
+}
+
+.entries p {
+	margin: 0 12px 0 30px;
+}
+
+
+
+.container {
+	display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+#august-convention {
+  width: 310px;
+  height: 380px;
+  margin: 10px;
+  padding: 10px;
+  background: #ff9595;
+  border-radius: 25px;
+
+}
+
+
+
+.box-format {
+	display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 20px solid #ff9595;
+}
+
+div_2 {
+  width: 300px;
+  border: 15px solid #ff9595;
+  padding: 50px;
+  margin: 20px;
+}
+
+.boxed {
+  border: 30px pink ;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  
+.resource-button{
+  background-color:pink;
+  color: white;
+  text-align: center;
+  font-size: 17px;
+  height: 60px;
+  width: 180px;
+}
+
+.article-button{
+  background-color:pink;
+  color: white;
+  text-align: center;
+  font-size: 17px;
+  height: 90px;
+  width: 200px;
+}
+.mainImages{
+   
+  /*center image*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 40%;
+  height: 40%;
+}
+
+.logo{
+  float: right;
+  width: 50%;
+  height: 50%;
+}
+
+.resource-boxes {
+  width: 310px;
+  height: 630px;
+  margin: 10px;
+  padding: 10px;
+  background: #ff9595;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.article-box {
+  width: 310px;
+  height: 800px;
+  margin: 10px;
+  padding: 10px;
+  background: #ff9595;
+  border-radius: 25px;
+  text-align: center;
+}
+
+#brazen-boxes-calendar-button {
+  background-color:pink;
+  color: white;
+  text-align: center;
+  font-size: 17px;
+  height: 90px;
+  width: 200px;
+}
+
+#brazenbox-img {
+  background-color: #fedcdb;
+}
